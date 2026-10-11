@@ -30,7 +30,7 @@
 
 <!-- HERO PAGE -->
 <div class="hero-page" id="hero-page">
-    <div class="hero-wrapper">
+    <div class="wrapper">
         <div>
             <p>Project 2 Web Design</p>
             <h1 class="hero-txt">Which Ouran Host Would You Be?</h1>
@@ -162,14 +162,26 @@
       <div class="navigation">
         <button class="orange-button" onclick="previousPage('Q2')">Back</button>
         <button class="orange-button" onclick="nextPage('thank-you')">Submit</button>
-
       </div>
-
+      
     </div>
   </div>
 </div>
 
+
 <!-- THANK YOU/RESULTS -->
- <p>you got mail</p>
- <button onclick="nextPage('hero-page')" class="purple-button"> Start Over! </button>
+<div class="thankyou-page" id="thankyou-page">
+    <div class="thankyou-box">
+        <div>
+            <p> Congratulations! You Got...</p>
+            <h1 class="hero-txt">Haruhi Fujioka</h1>
+            <p> You're independent, practical, straightforward, and surprisingly adaptable. While everyone else is busy being dramatic, you're probably wondering why nobody is simply acting normal.</p>
+
+            <button onclick="nextPage('hero-page')" class="purple-button"> Take Again! </button>
+        </div>
+        <img class="doll-img" src="./img/HARUHI.png" alt="">
+    </div>
+</div>
+
+
 </html>

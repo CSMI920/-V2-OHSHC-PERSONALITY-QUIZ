@@ -31,18 +31,45 @@ body {
     padding: 200px 20px;
 }
 
+.thankyou-page{
+background-size: 67px 56px;
+min-height: 100vh;
+width: 100%;
+box-sizing: border-box;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 200px 20px;
+background: repeating-linear-gradient(
+  to right,
+  #657135,
+  #657135 20px,
+  #b8c889 21px,
+  #b8c889 13px
+);
+}
+
 
 /* WRAPPERS */
-.hero-wrapper {
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 40px;
     margin: auto;
     padding: 210px 0;
     width: 80%;
+}
 
+.TY-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    margin: auto;
+    padding: 46px;
+    width: 70%;
+    background-color: #fdf8f2;
 }
 
 .question-wrapper{
@@ -51,12 +78,18 @@ body {
     margin: auto;
 }
 
-
-
  /* IMAGES */
 .hero-img {
     width: 40%;
     height: auto;
+    image-rendering: pixelated;
+}
+
+.doll-img{
+    width: 30%;
+    height: auto;
+    image-rendering: pixelated;
+
 }
 
  /*TEXT */
@@ -77,8 +110,7 @@ body {
 }
 
 
- /* boxes */
-
+ /* BOXES */
 .question-box{
     box-sizing: border-box;
     width: 100%;
@@ -97,7 +129,7 @@ body {
      0 0/calc(2*var(--r)) calc(2*var(--r)) round;
 }
 
-
+ 
 .answer-box{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -114,6 +146,27 @@ body {
     margin-top: 35px;
 }
 
+.thankyou-box { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-evenly; 
+  gap: 20px; /* Fixed: '20pxx' to '20px' */
+  margin: auto; 
+width: 900px;
+--r: 14px;
+height: 500px; 
+  aspect-ratio: 1; 
+  padding: 40px; 
+  background: #fdf8f2; 
+  /* Fixed: added missing comma after the linear-gradient declaration */
+  mask: linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 2 * var(--r)) calc(100% - 2 * var(--r)), 
+        radial-gradient(farthest-side, #000 97%, #0000) 0 0 / calc(2 * var(--r)) calc(2 * var(--r)) round; 
+  -webkit-mask: linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 2 * var(--r)) calc(100% - 2 * var(--r)), 
+                radial-gradient(farthest-side, #000 97%, #0000) 0 0 / calc(2 * var(--r)) calc(2 * var(--r)) round; /* Added for Safari support */
+}
+
+    
+    
 
 
 /* BUTTONS */
