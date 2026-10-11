@@ -28,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 200px 20px;
 }
 
 
@@ -80,15 +80,23 @@ body {
  /* boxes */
 
 .question-box{
-   background-color: #fdf8f2;
-    padding: 70px;
     box-sizing: border-box;
     width: 100%;
-    min-height: 650px;
+    min-height: 480px;
     text-align: left;
 
-    border-radius: 35px;
+  --r: 13px; /* radius of circles */
+  height: 320px;
+  aspect-ratio: 1;
+  padding: 40px;
+  background: #fdf8f2;
+  mask: 
+    linear-gradient(#000 0 0) no-repeat
+     50%/calc(100% - 2*var(--r)) calc(100% - 2*var(--r)), 
+    radial-gradient(farthest-side,#000 97%,#0000) 
+     0 0/calc(2*var(--r)) calc(2*var(--r)) round;
 }
+
 
 .answer-box{
     display: grid;
@@ -132,7 +140,7 @@ body {
     background-color: #e25b28;
     border-color: #e25b28;
     border-radius: 16px;
-    margin-top: 40px;
+    margin-top: auto;
     cursor: pointer;
 }
 

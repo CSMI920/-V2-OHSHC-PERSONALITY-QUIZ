@@ -36,7 +36,7 @@
             <h1 class="hero-txt">Which Ouran Host Would You Be?</h1>
             <p> Take my quiz & find out which Ouran Host Club Member would fit you best! Answer truthfully & have fun!</p>
 
-            <button onclick="nextPage('Q1')" class="purple-button"> start quiz! </button>
+            <button onclick="nextPage('Q1')" class="purple-button"> Start Quiz! </button>
         </div>
         <img class="hero-img" src="./img/crossiant.png" alt="">
     </div>
@@ -127,4 +127,49 @@
   </div>
 </div>
 
+<!-- QUESTION 3 -->
+<div class="question-page" id="Q3">
+  <div class="question-wrapper">
+    <div class="question-box">
+
+      <div>
+      <p>question 3<p>
+      <p class="question-txt">dingleberry</p>
+      </div>
+
+      <div class="answer-box">
+        <label class="pink-button">
+          <input type="radio" name="music" value="blue">
+          Blue
+        </label>
+
+        <label class="pink-button">
+          <input type="radio" name="music" value="pink">
+          Pink
+        </label>
+
+        <label class="pink-button">
+          <input type="radio" name="music" value="red">
+          Red
+        </label>
+
+        <label class="pink-button">
+          <input type="radio" name="music" value="purple">
+          Purple
+        </label>
+      </div>    
+
+      <div class="navigation">
+        <button class="orange-button" onclick="previousPage('Q2')">Back</button>
+        <button class="orange-button" onclick="nextPage('thank-you')">Submit</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- THANK YOU/RESULTS -->
+ <p>you got mail</p>
+ <button onclick="nextPage('hero-page')" class="purple-button"> Start Over! </button>
 </html>
