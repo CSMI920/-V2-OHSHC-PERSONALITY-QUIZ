@@ -79,18 +79,14 @@ background: repeating-linear-gradient(
 }
 
  /* IMAGES */
-.hero-img {
-    width: 40%;
+ .img{
+    width: 1500px;
     height: auto;
-    image-rendering: pixelated;
+    box-shadow: 3px 3px 10px #00000033;
+    border-radius: 8px;
+    padding: 7px;
 }
 
-.doll-img{
-    width: 30%;
-    height: auto;
-    image-rendering: pixelated;
-
-}
 
  /*TEXT */
 .hero-txt {
