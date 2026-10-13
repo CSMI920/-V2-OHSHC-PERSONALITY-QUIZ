@@ -133,6 +133,14 @@ background: repeating-linear-gradient(
 
 }
 
+.commentbox {
+    height: auto;
+    width: 424px;
+    background-color: #fdf8f2;
+    border-radius: 10px;
+    border-color: #b8c889;
+}
+
 .navigation{
     display: flex;
     justify-content: space-between;
