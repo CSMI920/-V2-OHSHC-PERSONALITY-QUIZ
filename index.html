@@ -30,14 +30,13 @@
 
 <!-- HERO PAGE -->
 <div class="hero-page" id="hero-page">
-
-    <div class="hero-wrapper">
+    <div class="wrapper center">
         <div>
             <p>Project 2 Web Design</p>
-            <h1 class="hero-txt">Which Ouran Host Would You Be?</h1>
+            <h1 class="header bigger">Which Ouran Host Would You Be?</h1>
             <p> Take my quiz & find out which Ouran Host Club Member would fit you best! Answer truthfully & have fun!</p>
 
-            <button onclick="nextPage('Q1')" class="purple-button"> Start Quiz! </button>
+            <button onclick="nextPage('Q1')" class="progress-button center"> Start Quiz! </button>
         </div>
         <img class="img" src="./img/ohshc-gif.gif" alt="">
     </div>
@@ -45,12 +44,12 @@
 
 <!-- QUESTION 1 -->
 <div class="question-page page" id="Q1">
-  <div class="question-wrapper">
-    <div class="question-box">
+  <div class="wrapper">
+    <div class="box">
 
       <div>
       <p>Question 1<p>
-      <p class="question-txt">A genie grants you one wish. Which are you picking? </p>
+      <p class="header">A genie grants you one wish. Which are you picking? </p>
       </div>
 
       <div class="answer-box">
@@ -76,8 +75,8 @@
       </div>    
 
       <div class="navigation">
-        <button class="orange-button" onclick="previousPage('hero-page')">Back</button>
-        <button class="orange-button" onclick="nextPage('Q2')">Next</button>
+        <button class="progress-button" onclick="previousPage('hero-page')">Back</button>
+        <button class="progress-button" onclick="nextPage('Q2')">Next</button>
 
       </div>
 
@@ -87,12 +86,12 @@
 
 <!-- QUESTION 2 -->
 <div class="question-page page" id="Q2">
-  <div class="question-wrapper">
-    <div class="question-box">
+  <div class="wrapper">
+    <div class="box">
 
       <div>
       <p>Question 2<p>
-      <p class="question-txt">Which is your most defining quality?</p>
+      <p class="header">Which is your most defining quality?</p>
       </div>
 
       <div class="answer-box">
@@ -118,8 +117,8 @@
       </div>    
 
       <div class="navigation">
-        <button class="orange-button" onclick="previousPage('Q1')">Back</button>
-        <button class="orange-button" onclick="nextPage('Q3')">Next</button>
+        <button class="progress-button" onclick="previousPage('Q1')">Back</button>
+        <button class="progress-button" onclick="nextPage('Q3')">Next</button>
 
       </div>
 
@@ -129,12 +128,12 @@
 
 <!-- QUESTION 3 -->
 <div class="question-page page" id="Q3">
-  <div class="question-wrapper">
-    <div class="question-box">
+  <div class="wrapper">
+    <div class="box">
 
       <div>
       <p>Question 3<p>
-      <p class="question-txt">If your life was an anime, which of these genres would it be?</p>
+      <p class="header">If your life was an anime, which of these genres would it be?</p>
       </div>
 
       <div class="answer-box">
@@ -160,8 +159,8 @@
       </div>    
 
       <div class="navigation">
-        <button class="orange-button" onclick="previousPage('Q2')">Back</button>
-        <button class="orange-button" onclick="nextPage('thankyou-page')">Submit</button>
+        <button class="progress-button" onclick="previousPage('Q2')">Back</button>
+        <button class="progress-button" onclick="nextPage('thankyou-page')">Submit</button>
       </div>
       
     </div>
@@ -170,10 +169,11 @@
 
 <!-- THANK YOU/RESULTS -->
 <div class="thankyou-page" id="thankyou-page">
-    <div class="thankyou-box">
-        <div>
+    <div class="wrapper">
+        <div class="box">
             <p> Congratulations! You Got...</p>
-            <h1 class="thankyou-txt">Haruhi Fujioka</h1>
+            <img class="img" src="./img/HARUHI.gif" alt="">
+            <h1 class="header bigger">Haruhi Fujioka</h1>
             <p><em>You're independent, practical, straightforward, and surprisingly adaptable. While everyone else is busy being dramatic, you're probably wondering why nobody is simply acting normal.</em></p>
 
               <form action="#" method="POST">
@@ -182,12 +182,12 @@
                   <textarea class="commentbox" id="comment" name="comment" rows="4" cols="50" placeholder="..." required></textarea>
                 </div> 
               <br>
-              <input class="thankyou-button" type="submit" value="Take Again!" onclick="window.location.reload(); return false;">
+              <input class="progress-button center" type="submit" value="Take Again!" onclick="window.location.reload(); return false;">
 
             </form>
         </div>
 
-        <img class="img" src="./img/HARUHI.gif" alt="">
+        
 
           
     </div>
