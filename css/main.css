@@ -255,27 +255,6 @@ height: 500px;
 }
 
 
-
-/* phone screens */
-@media (max-width: 600px) {
-    .hero-wrapper {
-        flex-direction: column;
-        padding: 60px 0;
-    }
-
-    .hero-text {
-        width: 100%;
-    }
-
-    .hero-text h2 {
-        font-size: 45px;
-    }
-
-    .hero-wrapper img {
-        width: 80%;
-    }
-}
-
 /* Hide all pages */
 .page {
     display: none;
