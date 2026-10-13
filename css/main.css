@@ -1,4 +1,3 @@
-/* Place SS styles here */
 
 body {
     margin: 0;
@@ -31,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px 20px;
+    padding: 100px 50px;
 }
 
 .thankyou-page{
@@ -42,7 +41,7 @@ box-sizing: border-box;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 200px 20px;
+padding: 100px 20px;
 background: repeating-linear-gradient(
   to right,
   #657135,
@@ -54,26 +53,16 @@ background: repeating-linear-gradient(
 
 
 /* WRAPPERS */
-.wrapper {
+.hero-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     margin: auto;
-    padding: 210px 0;
+    padding: 100px 0;
     width: 80%;
 }
 
-.TY-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 100px;
-    margin: auto;
-    padding: 46px;
-    width: 70%;
-    background-color: #fdf8f2;
-}
 
 .question-wrapper{
     width: 100%;
@@ -158,9 +147,9 @@ background: repeating-linear-gradient(
   justify-content: space-evenly; 
   gap: 20px; /* Fixed: '20pxx' to '20px' */
   margin: auto; 
-width: 900px;
---r: 14px;
-height: 500px; 
+    width: 900px;
+    --r: 14px;
+    height: 500px; 
   aspect-ratio: 1; 
   padding: 40px; 
   background: #fdf8f2; 
@@ -231,7 +220,7 @@ height: 500px;
 }
 
 .pink-button input[type="radio"] {
-    display: none;
+    opacity: 0
 }
 
 .pink-button:has(input:checked) {
@@ -255,15 +244,14 @@ height: 500px;
 }
 
 
-/* Hide all pages */
 .page {
     display: none;
     min-height: 100vh;
     box-sizing: border-box;
 }
 
-/* Show only the current page */
 .page.active {
     display: flex;
     flex-direction: column;
 }
+
