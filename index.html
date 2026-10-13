@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Layouts</title>
+  <title>OHSHC Personality Quiz</title>
   <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,6 +30,8 @@
 
 <!-- HERO PAGE -->
 <div class="hero-page" id="hero-page">
+<p>calia smith</p>
+
     <div class="wrapper">
         <div>
             <p>Project 2 Web Design</p>
@@ -43,7 +45,7 @@
 </div>
 
 <!-- QUESTION 1 -->
-<div class="question-page" id="Q1">
+<div class="question-page page" id="Q1">
   <div class="question-wrapper">
     <div class="question-box">
 
@@ -84,9 +86,8 @@
   </div>
 </div>
 
-
 <!-- QUESTION 2 -->
-<div class="question-page" id="Q2">
+<div class="question-page page" id="Q2">
   <div class="question-wrapper">
     <div class="question-box">
 
@@ -128,7 +129,7 @@
 </div>
 
 <!-- QUESTION 3 -->
-<div class="question-page" id="Q3">
+<div class="question-page page" id="Q3">
   <div class="question-wrapper">
     <div class="question-box">
 
@@ -161,25 +162,34 @@
 
       <div class="navigation">
         <button class="orange-button" onclick="previousPage('Q2')">Back</button>
-        <button class="orange-button" onclick="nextPage('thank-you')">Submit</button>
+        <button class="orange-button" onclick="nextPage('thankyou-page')">Submit</button>
       </div>
       
     </div>
   </div>
 </div>
 
-
 <!-- THANK YOU/RESULTS -->
 <div class="thankyou-page" id="thankyou-page">
     <div class="thankyou-box">
         <div>
             <p> Congratulations! You Got...</p>
-            <h1 class="hero-txt">Haruhi Fujioka</h1>
-            <p> You're independent, practical, straightforward, and surprisingly adaptable. While everyone else is busy being dramatic, you're probably wondering why nobody is simply acting normal.</p>
+            <h1 class="thankyou-txt">Haruhi Fujioka</h1>
+            <p><em>You're independent, practical, straightforward, and surprisingly adaptable. While everyone else is busy being dramatic, you're probably wondering why nobody is simply acting normal.</em></p>
 
-            <button onclick="nextPage('hero-page')" class="purple-button"> Take Again! </button>
+              <form action="#" method="POST">
+                <div>
+                  <label for="comment">Leave a Comment!</label><br>
+                  <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..." required></textarea>
+                </div> 
+              <br>
+              <input class="thankyou-button" type="submit" value="Take Again!">
+            </form>
         </div>
+
         <img class="img" src="./img/HARUHI.gif" alt="">
+
+          
     </div>
 </div>
 
